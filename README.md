@@ -1,5 +1,7 @@
 # La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
 
+> El archivo `TF-Grupo-G.pdf` contiene el informe final de explicación teórica, funcionamiento de los códigos y resultados reportados de este proyecto.
+
 Para realizar la simulación de los objetivos planteados se tienen los siguientes códigos:
 
 1. `maxwell_juttner_algorithms.py`
@@ -19,7 +21,7 @@ Sus funciones son importadas a los otros códigos con `import maxwell_juttner_al
 
 Puede variar el número total de números muestreados (no recomendable hacerlo más de 10 millones). Para la gráfica de las distribuciones por Sobol puede variar las temperaturas theta (mantenga la misma cantidad de valores) y velocidades de boost beta. Puede cambiar entre los tres algoritmos (rechazo, Sobol, transformada inversa) en la línea 57 según el nombre de las funciones en 1).
 
-Debe advertirse que para valores de `theta < 1`, Sobol deja de aceptar valores y no funciona adecuadamente, por lo que NO se recomienda probar con esos valores.
+Debe advertirse que para valores de theta < 1, Sobol deja de aceptar valores y no funciona adecuadamente, por lo que NO se recomienda probar con esos valores.
 
 Para la gráfica de error puede variar theta y beta a gusto.
 
