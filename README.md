@@ -1,29 +1,29 @@
-# La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
+## La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
 
 ============================================================
 
 Para realizar la simulación de los objetivos planteados se tienen los siguientes códigos:
 
-1) maxwell_juttner_algorithms.py
-2) maxwell_juttner_results.py
-3) PIC_algorithms.py
-4) PIC_initialization.py
-5) PIC_loop.py
-6) PIC_results.py
+(1) maxwell_juttner_algorithms.py
+(2) maxwell_juttner_results.py
+(3) PIC_algorithms.py
+(4) PIC_initialization.py
+(5) PIC_loop.py
+(6) PIC_results.py
 
 ============================================================
 
 Para correrlos, todos los archivos deben estar ubicados en una misma carpeta.
 
-1) y 3) sólo es necesarios correrlos una sola vez para cargar las funciones a utilizar.
+(1) y (3) sólo es necesarios correrlos una sola vez para cargar las funciones a utilizar.
 
 Sus funciones son importadas a los otros códigos con import maxwell_juttner_algorithms as mj y import PIC_algorithms as PIC.
 
 ============================================================
 
-## RESPECTO A LOS ARCHIVOS MAXWELL_JUTTNER:
+### RESPECTO A LOS ARCHIVOS MAXWELL_JUTTNER:
 
-2) permite recrear las gráficas de las distribuciones estacionarias, desplazadas y la comparación entre los tres algoritmos que fueron mostradas en el informe.
+(2) permite recrear las gráficas de las distribuciones estacionarias, desplazadas y la comparación entre los tres algoritmos que fueron mostradas en el informe.
 
 Puede variar el número total de números muestreados (no recomendable hacerlo más de 10 millones). Para la gráfica de las distribuciones por Sobol puede variar las temperaturas theta (mantenga la misma cantidad de valores) y velocidades de boost beta. Puede cambiar entre los tres algoritmos (rechazo, Sobol, transformada inversa) en la línea 57 según el nombre de las funciones en 1).
 
@@ -33,17 +33,17 @@ Para la gráfica de error puede variar theta y beta a gusto.
 
 ============================================================
 
-RESPECTO A LOS ARCHIVOS PIC:
+### RESPECTO A LOS ARCHIVOS PIC:
 
 >Si se quiere compilar de cero:
 
-Estos deben ejecutarse en orden: 4) -> 5) -> 6).
+Estos deben ejecutarse en orden: (4) -> (5) -> (6).
 
 
 
-4) calcula posiciones, velocidades de partículas del medio y campos eléctrico y magnético iniciales del sistema.
+(4) calcula posiciones, velocidades de partículas del medio y campos eléctrico y magnético iniciales del sistema.
 
-Compilar 4) exportará en la carpeta los archivos:
+Compilar (4) exportará en la carpeta los archivos:
 'particles_i_IGM.csv'
 'particles_e_IGM.csv'
 'E_x.csv'
@@ -56,9 +56,9 @@ Puede cambiar en este el tamaño de grilla y el número de partículas del medio
 
 
 
-5) implementa las 5 etapas del ciclo PIC y da los resultados de las posiciones, velocidades de partículas del medio/jet y campos eléctrico y magnético finales del sistema.
+(5) implementa las 5 etapas del ciclo PIC y da los resultados de las posiciones, velocidades de partículas del medio/jet y campos eléctrico y magnético finales del sistema.
 
-Compilar 5) tomará los archivos .csv y exportará en la carpeta los archivos:
+Compilar (5) tomará los archivos .csv y exportará en la carpeta los archivos:
 'particles_i_IGM_final.csv'
 'particles_e_IGM_final.csv'
 'particles_i_jet_final.csv'
@@ -73,9 +73,9 @@ Debe tenerse en cuenta que dada la complejidad de operaciones a realizar el cód
 
 
 
-6) calcula gráficas basadas en las posiciones en el instante final y el campo magnético final.
+(6) calcula gráficas basadas en las posiciones en el instante final y el campo magnético final.
 
-Compilar 6) tomará los archivos .csv y hará las respectivas gráficas con los archivos corriendo todo de cero.
+Compilar (6) tomará los archivos .csv y hará las respectivas gráficas con los archivos corriendo todo de cero.
 
 
 
