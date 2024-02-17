@@ -1,8 +1,6 @@
 # La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
 
 ============================================================
-README:
-
 
 Para realizar la simulación de los objetivos planteados se tienen los siguientes códigos:
 
@@ -23,7 +21,7 @@ Sus funciones son importadas a los otros códigos con import maxwell_juttner_alg
 
 ============================================================
 
-RESPECTO A LOS ARCHIVOS MAXWELL_JUTTNER:
+## RESPECTO A LOS ARCHIVOS MAXWELL_JUTTNER:
 
 2) permite recrear las gráficas de las distribuciones estacionarias, desplazadas y la comparación entre los tres algoritmos que fueron mostradas en el informe.
 
