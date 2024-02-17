@@ -1,4 +1,4 @@
-## La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
+# La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
 
 Para realizar la simulación de los objetivos planteados se tienen los siguientes códigos:
 
@@ -11,9 +11,9 @@ Para realizar la simulación de los objetivos planteados se tienen los siguiente
 
 Para correrlos, todos los archivos deben estar ubicados en una misma carpeta.
 (1) y (3) sólo es necesarios correrlos una sola vez para cargar las funciones a utilizar.
-Sus funciones son importadas a los otros códigos con `import maxwell_juttner_algorithms as mj y import PIC_algorithms as PIC.
+Sus funciones son importadas a los otros códigos con `import maxwell_juttner_algorithms as mj` y `import PIC_algorithms as PIC`.
 
-### Respecto a los archivos `maxwell_juttner`
+## Respecto a los archivos `maxwell_juttner`
 
 (2) permite recrear las gráficas de las distribuciones estacionarias, desplazadas y la comparación entre los tres algoritmos que fueron mostradas en el informe.
 
@@ -23,7 +23,7 @@ Debe advertirse que para valores de `theta < 1`, Sobol deja de aceptar valores y
 
 Para la gráfica de error puede variar theta y beta a gusto.
 
-### Respecto a los archivos PIC
+## Respecto a los archivos PIC
 
 > Si se quiere compilar de cero:
 
