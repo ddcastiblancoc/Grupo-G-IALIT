@@ -1,4 +1,6 @@
-﻿============================================================
+# La distribución de Maxwell-Jüttner: implementación y aplicación en una simulación PIC de un jet en un medio intergaláctico magnetizado
+
+============================================================
 README:
 
 
